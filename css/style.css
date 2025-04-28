@@ -445,7 +445,10 @@ footer .line-footer p a {
     }
 
     .topo-do-site .flex {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        align-items: center; /* centraliza a imagem e o texto */
+        text-align: center;  /* opcional: deixa o texto alinhado no centro */
+        gap: 40px;
     }
 
     h2.titulo {
