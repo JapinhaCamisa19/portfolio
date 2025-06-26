@@ -16,11 +16,12 @@ h2.titulo {
     color: white;
     font-size: 38px;
     text-align: center;
-
 }
 
 .img-topo-site img, .img-sobre img {
-    max-width: 300px; /* Defina um limite para não ficar grande demais */
+    max-width: 300px;
+    border-radius: 50px;
+    padding: 10px;
     height: auto;
 }
 
@@ -31,10 +32,6 @@ h2.titulo span {
 .flex {
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
-    /*flex-wrap: wrap;*/
-
-
 }
 
 button:hover, form .btn-eviar input:hover {
@@ -43,13 +40,11 @@ button:hover, form .btn-eviar input:hover {
     transform: scale(1.05);
 }
 
-/* Centralização do conteúdo */
 .interface {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Estilo do cabeçalho */
 header {
     padding: 40px 4%;
 }
@@ -58,20 +53,18 @@ header .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-/* Estilização do logotipo */
 .logo img {
     width: auto;
-    height: 80px; /* Ajuste o tamanho conforme necessário */
+    height: 80px;
 }
 
-/* Estilização do menu de navegação */
-header nav.menu-desktop a:hover{
+header nav.menu-desktop a:hover {
     color: white;
-    transform:scale(1.05)
+    transform: scale(1.05)
 }
+
 header nav.menu-desktop ul {
     list-style: none;
     display: flex;
@@ -83,48 +76,45 @@ header nav.menu-desktop ul li {
     padding: 0 40px
 }
 
-
-
 header a {
     color: #5c5c5c;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
-
 }
 
 header a:hover {
     color: #fff;
-    transform: scale(1, 01);
-
+    transform: scale(1.01);
 }
-/*ESTILO DO mENU MB*/
-.btn-abri-menu i{
+
+.btn-abri-menu i {
     color: #ba1212;
     font-size: 50px;
-
 }
-.menu-mobile{
+
+.menu-mobile {
+    display: none;
     background-color: #ba1212;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 99999;
+    z-index: 99;
     width: 0%;
     overflow-x: hidden;
     transition: .5s;
-
 }
-.menu-mobile.abrir-menu{
+
+.menu-mobile.abrir-menu {
     width: 70%;
-
-}
-.menu-mobile.btn-abrir-menu ~ .overlay-menu1{
-    display: block; ;
 }
 
-.overlay-menu1{
+.menu-mobile.btn-abrir-menu ~ .overlay-menu1 {
+    display: block;
+}
+
+.overlay-menu1 {
     background-color: rgba(0, 0, 0, 0.78);
     width: 100%;
     height: 100%;
@@ -135,9 +125,10 @@ header a:hover {
     display: none;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
     text-align: right;
 }
+
 .menu-mobile nav ul li a {
     color: #fff;
     font-size: 20px;
@@ -146,22 +137,19 @@ header a:hover {
     display: block;
 }
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover {
     background-color: black;
-
-
-}
-.menu-mobile .btn-fechar-menu{
-    padding:20px 5% ;
 }
 
-.menu-mobile .btn-fechar-menu i{
+.menu-mobile .btn-fechar-menu {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar-menu i {
     color: white;
     font-size: 30px;
-
-
 }
-/* Botão de contato */
+
 .btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
@@ -171,13 +159,8 @@ header a:hover {
     border: none;
     cursor: pointer;
     transition: 0.3s;
-    border: 0;
-    border-radius: 30px
-
+    border-radius: 30px;
 }
-
-
-/*Estilo do topo do site*/
 
 section.topo-do-site {
     padding: 40px 4%
@@ -188,7 +171,6 @@ section.topo-do-site.flex {
     justify-content: center;
     gap: 90px;
 }
-
 
 .topo-do-site h1 {
     color: white;
@@ -209,7 +191,6 @@ section.topo-do-site.flex {
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-
 }
 
 @keyframes flutuar {
@@ -220,9 +201,6 @@ section.topo-do-site.flex {
         top: 30px;
     }
 }
-
-/*ESTILOS DAS ESPECIALIDADES*/
-
 
 section.especiliadades {
     padding: 40px 4%;
@@ -248,15 +226,12 @@ section.especiliadades .flex {
 .especiliadades .especialidades-box i {
     font-size: 70px;
     color: #af1614;
-
 }
 
 .especiliadades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
-
-/*ESTILO DO SOBRE*/
 
 section.sobre {
     padding: 80px 4%;
@@ -269,7 +244,6 @@ section.sobre .flex {
 
 .sobre .txt-sobre {
     color: white;
-
 }
 
 .sobre .txt-sobre h2 {
@@ -286,7 +260,6 @@ section.sobre .flex {
 .sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
-
 }
 
 .btn-social button {
@@ -299,25 +272,18 @@ section.sobre .flex {
     cursor: pointer;
     margin: 0 5px;
     transition: 0.3s;
-
 }
 
-
-/* Estilo do PORTFOLIO */
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.07);
-
-
 }
 
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
     gap: 15px;
-
 }
-
 
 .img-port {
     width: 360px;
@@ -332,7 +298,6 @@ section.portfolio .flex {
 
 .img-port:hover {
     background-position: 100% 100%;
-
 }
 
 .overlay {
@@ -351,18 +316,14 @@ section.portfolio .flex {
     color: white;
     opacity: 0;
     transition: 0.5s;
-
 }
 
 .overlay:hover {
     opacity: 1;
-
 }
 
-/* Estilo do formulario */
 section.formulario {
     padding: 80px 4%;
-
 }
 
 form {
@@ -384,13 +345,10 @@ form input, form textarea {
     border-radius: 15px;
     color: white;
     font-size: 18px;
-
-
 }
 
 form textarea {
     resize: none;
-
 }
 
 form .btn-eviar {
@@ -406,8 +364,6 @@ form .btn-eviar input {
     cursor: pointer;
     transition: .2s;
 }
-
-/*CSS DO FOOTER*/
 
 footer {
     padding: 40px 4%;
@@ -429,7 +385,6 @@ footer .line-footer {
 footer .line-footer p i {
     color: #ba1212;
     font-size: 22px;
-
 }
 
 footer .line-footer p a {
@@ -438,40 +393,34 @@ footer .line-footer p a {
 
 .logo-footer img {
     width: auto;
-    height: 80px; /* Ajuste o tamanho conforme necessário */
+    height: 80px;
 }
 
 @media screen and (max-width: 1020px) {
-    /*classes gerais*/
     .flex {
         flex-direction: column;
     }
 
     h2.titulo {
-
         font-size: 34px;
         line-height: 30px;
     }
 
     .topo-do-site .flex {
         flex-direction: column;
-        align-items: center; /* centraliza a imagem e o texto */
-        text-align: center;  /* opcional: deixa o texto alinhado no centro */
+        align-items: center;
+        text-align: center;
         gap: 40px;
     }
-
-    h2.titulo {
-        font-size: 34px;
-        line-height: 30px;
-    }
-
-    /*CABEÇALHO*/
 
     .menu-desktop, .btn-contato {
         display: none;
     }
 
-    /*    TOPO DO SITE*/
+    .menu-mobile {
+        display: block;
+    }
+
     section.topo-do-site.flex {
         gap: 40px;
     }
@@ -510,7 +459,6 @@ footer .line-footer p a {
         width: 100%;
     }
 
-    /* PORTFOLIO */
     section.portfolio {
         padding: 80px 8%;
     }
@@ -519,30 +467,305 @@ footer .line-footer p a {
         width: 100%;
         max-width: 360px;
         margin: 0 auto;
-
     }
 
     section.portfolio .flex {
         gap: 60px;
     }
 
-    /*    RODAPE*/
     footer .flex {
         flex-direction: column;
         gap: 30px;
     }
+
     footer .line-footer {
         text-align: center;
-
     }
 }
 
-
-.lll{
+.lll {
     text-decoration: none;
 }
 
-.llll{
+.llll {
     text-decoration: none;
     color: white;
 }
+
+.monocromatico {
+    filter: grayscale(50%);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch #input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2196f3;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.sun-moon {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: yellow;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#input:checked + .slider {
+    background-color: black;
+}
+
+#input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+#input:checked + .slider .sun-moon {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: white;
+    -webkit-animation: rotate-center 0.6s ease-in-out both;
+    animation: rotate-center 0.6s ease-in-out both;
+}
+
+.moon-dot {
+    opacity: 0;
+    transition: 0.4s;
+    fill: gray;
+}
+
+#input:checked + .slider .sun-moon .moon-dot {
+    opacity: 1;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round .sun-moon {
+    border-radius: 50%;
+}
+
+#moon-dot-1 {
+    left: 10px;
+    top: 3px;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    z-index: 4;
+}
+
+#moon-dot-2 {
+    left: 2px;
+    top: 10px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 4;
+}
+
+#moon-dot-3 {
+    left: 16px;
+    top: 18px;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    z-index: 4;
+}
+
+#light-ray-1 {
+    left: -8px;
+    top: -8px;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    z-index: -1;
+    fill: white;
+    opacity: 10%;
+}
+
+#light-ray-2 {
+    left: -50%;
+    top: -50%;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    z-index: -1;
+    fill: white;
+    opacity: 10%;
+}
+
+#light-ray-3 {
+    left: -18px;
+    top: -18px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+    fill: white;
+    opacity: 10%;
+}
+
+.cloud-light {
+    position: absolute;
+    fill: #eee;
+    animation-name: cloud-move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.cloud-dark {
+    position: absolute;
+    fill: #ccc;
+    animation-name: cloud-move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+#cloud-1 {
+    left: 30px;
+    top: 15px;
+    width: 40px;
+}
+
+#cloud-2 {
+    left: 44px;
+    top: 10px;
+    width: 20px;
+}
+
+#cloud-3 {
+    left: 18px;
+    top: 24px;
+    width: 30px;
+}
+
+#cloud-4 {
+    left: 36px;
+    top: 18px;
+    width: 40px;
+}
+
+#cloud-5 {
+    left: 48px;
+    top: 14px;
+    width: 20px;
+}
+
+#cloud-6 {
+    left: 22px;
+    top: 26px;
+    width: 30px;
+}
+
+@keyframes cloud-move {
+    0% {
+        transform: translateX(0px);
+    }
+
+    40% {
+        transform: translateX(4px);
+    }
+
+    80% {
+        transform: translateX(-4px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.stars {
+    transform: translateY(-32px);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.star {
+    fill: white;
+    position: absolute;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    animation-name: star-twinkle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#input:checked + .slider .stars {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#star-1 {
+    width: 20px;
+    top: 2px;
+    left: 3px;
+    animation-delay: 0.3s;
+}
+
+#star-2 {
+    width: 6px;
+    top: 16px;
+    left: 3px;
+}
+
+#star-3 {
+    width: 12px;
+    top: 20px;
+    left: 10px;
+    animation-delay: 0.6s;
+}
+
+#star-4 {
+    width: 18px;
+    top: 0px;
+    left: 18px;
+    animation-delay: 1.3s;
+}
+
+@keyframes star-twinkle {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.2);
+    }
+
+    80% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+

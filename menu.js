@@ -15,3 +15,13 @@ menu.addEventListener('click',()=>{
 overlay.addEventListener('click',()=>{
     menu.classList.remove('abrir-menu')
 })
+function ativarMonocromatico() {
+    const body = document.body;
+    const checkbox = document.getElementById('input');
+
+    if (checkbox.checked) {
+        body.classList.add('monocromatico');
+    } else {
+        body.classList.remove('monocromatico');
+    }
+}
