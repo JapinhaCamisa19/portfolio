@@ -20,8 +20,9 @@ h2.titulo {
 
 .img-topo-site img, .img-sobre img {
     max-width: 300px;
-    border-radius: 50px;
-    padding: 10px;
+    border-radius: 90px;
+    padding: 15px;
+    gap: 15px;
     height: auto;
 }
 
@@ -176,17 +177,23 @@ section.topo-do-site.flex {
     color: white;
     font-size: 42px;
     line-height: 56px;
+    font-weight: bold;
 }
 
 .topo-do-site .txt-tpo-site h1 span {
     color: #ba1212;
-    font-size: 55px;
+    font-size: inherit; /* ou deixe igual ao título */
 }
 
-.topo-do-site.txt-tpo-site p {
-    color: #fff;
-    margin: 40px 0;
+.topo-do-site .txt-tpo-site p {
+    color: #ccc;
+    margin: 30px 0;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 28px;
 }
+
+
 
 .topo-do-site .img-topo-site img {
     position: relative;
