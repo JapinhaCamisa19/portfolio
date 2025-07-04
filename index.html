@@ -35,7 +35,7 @@
             </ul>
         </nav>
         <label class="switch">
-            <input id="input" type="checkbox" checked="darkTheme"onclick=ativarMonocromatico()>
+            <input id="input" type="checkbox" checked="darkTheme" onclick=ativarMonocromatico()>
             <div class="slider round">
                 <div class="sun-moon">
                     <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
@@ -102,7 +102,6 @@
         </label>
 
 
-
         <div class="btn-contato">
             <a href="#formulario">
                 <button>Contato</button>
@@ -141,17 +140,19 @@
                     <h1>
                         TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span>
                     </h1>
-                    <p>Sou um desenvolvedor de sites apaixonado por transformar ideias em soluções digitais modernas,
-                        rápidas e totalmente responsivas. Utilizo as tecnologias mais atualizadas do mercado para criar
-                        sites funcionais, atrativos e otimizados para todos os dispositivos.
+                    <p>Sou desenvolvedor web com foco em criar soluções digitais modernas, ágeis e 100% responsivas.
+                        Minha missão é transformar a sua ideia em um site funcional, bonito e eficiente, utilizando as
+                        tecnologias mais atuais do mercado.
 
-                        Tenho experiência em desenvolver desde portfólios profissionais e blogs personalizados até lojas
-                        virtuais completas (e-commerces), sempre com foco na performance, usabilidade e identidade do
-                        cliente.
+                        Com experiência em projetos que vão desde portfólios pessoais até lojas virtuais completas
+                        (e-commerces), ofereço um serviço personalizado, com atenção à performance, usabilidade e
+                        identidade visual da sua marca. Cada detalhe é pensado para que seu site não apenas funcione
+                        bem, mas também gere impacto e encantamento visual.
 
-                        Meu compromisso é entender as necessidades do seu projeto e entregar uma solução sob medida, que
-                        não apenas funcione bem, mas também encante visualmente. Vamos tirar seu projeto do papel e
-                        colocá-lo no ar com qualidade e eficiência!
+                        Se você busca um projeto que una criatividade, estratégia e qualidade, estou pronto para te
+                        ajudar a colocá-lo no ar com excelência.
+
+                        Vamos conversar?
                     </p>
 
                     <div class="btn-contato">
@@ -245,34 +246,184 @@
 <section class="portfolio" id="projetos">
     <div class="interface">
         <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
-        <div>
-            <div class="flex">
-                <div class="img-port" style="background-image: url(img/projetoacademia.png)">
-                    <div class="overlay">
-                        <a class="llll" href="https://treinos-rho.vercel.app/index.html" target="_blank">
-                            Projeto Treinos </a>
-                    </div>
+
+        <!-- Grid de projetos  -->
+        <div class="portfolio-grid">
+
+            <!-- PROJETO 1 -->
+            <article class="project-card">
+                <figure class="project-thumb" style="background-image:url('img/projetoacademia.png')"></figure>
+                <div class="project-info">
+                    <h3 class="project-title">Projeto Treinos</h3>
+                    <p class="project-desc">Landing page responsiva para programa de exercícios. Inclui seções de modalidades e CTA de contato.</p>
+                    <ul class="tech-list">
+                        <li><i class="bi bi-filetype-html"></i> HTML</li>
+                        <li><i class="bi bi-filetype-css"></i> CSS</li>
+                        <li><i class="bi bi-bootstrap"></i> Bootstrap</li>
+                        <li><i class="bi bi-phone"></i> Responsivo</li>
+
+                    </ul>
+                    <a href="https://treinos-rho.vercel.app/index.html" target="_blank" class="btn-projeto">Ver projeto</a>
                 </div>
-                <div class="img-port" style="background-image: url(img/lvare.png)">
-                    <div class="overlay"><a class="llll" href="https://alves-store.vercel.app/index.html"
-                                            target="_blank">Alves
-                        Store</a>
-                    </div>
+            </article>
+
+            <!-- PROJETO 2 -->
+            <article class="project-card">
+                <figure class="project-thumb" style="background-image:url('img/lvare.png')"></figure>
+                <div class="project-info">
+                    <h3 class="project-title">Alves Store</h3>
+                    <p class="project-desc">E​‑commerce de roupas com filtro por tamanho, carrinho e layout mobile​‑first.</p>
+                    <ul class="tech-list">
+                        <li><i class="bi bi-filetype-html"></i> HTML</li>
+                        <li><i class="bi bi-filetype-css"></i> CSS</li>
+                        <li><i class="bi bi-filetype-js"></i> JavaScript</li>
+                        <li><i class="bi bi-phone"></i> Responsivo</li>
+
+                    </ul>
+                    <a href="https://alves-store.vercel.app/index.html" target="_blank" class="btn-projeto">Ver projeto</a>
                 </div>
-                <div class="img-port" style="background-image: url(img/vovov.png)">
-                    <div class="overlay"><a class="llll" href="https://vovoe-md16.vercel.app/" target="_blank">Vovô
-                        Conectado</a>
-                    </div>
+            </article>
+
+            <!-- PROJETO 3 -->
+            <article class="project-card">
+                <figure class="project-thumb" style="background-image:url('img/vovov.png')"></figure>
+                <div class="project-info">
+                    <h3 class="project-title">Vovô Conectado</h3>
+                    <p class="project-desc">Site educativo que ajuda idosos a aprender tecnologia de forma acessível.</p>
+                    <ul class="tech-list">
+                        <li><i class="bi bi-filetype-html"></i> HTML</li>
+                        <li><i class="bi bi-filetype-css"></i> CSS</li>
+                        <li><i class="bi bi-filetype-js"></i> Swiper.js</li>
+                        <li><i class="bi bi-phone"></i> Responsivo</li>
+
+                    </ul>
+                    <a href="https://vovoe-md16.vercel.app/" target="_blank" class="btn-projeto">Ver projeto</a>
                 </div>
-                <div class="img-port" style="background-image: url(img/niver.png)">
-                    <div class="overlay"><a class="llll" href="https://aniver-juliana.vercel.app/" target="_blank">
-                        Convite aniversario</a>
-                    </div>
+            </article>
+
+            <!-- PROJETO 4 -->
+            <article class="project-card">
+                <figure class="project-thumb" style="background-image:url('img/niver.png')"></figure>
+                <div class="project-info">
+                    <h3 class="project-title">Convite Aniversário</h3>
+                    <p class="project-desc">Convite digital responsivo com tipografia temática e paleta vibrante.</p>
+                    <ul class="tech-list">
+                        <li><i class="bi bi-filetype-html"></i> HTML</li>
+                        <li><i class="bi bi-filetype-css"></i> CSS</li>
+                        <li><i class="bi bi-phone"></i> Responsivo</li>
+                    </ul>
+                    <a href="https://aniver-juliana.vercel.app/" target="_blank" class="btn-projeto">Ver projeto</a>
                 </div>
-            </div>
-        </div>
+            </article>
+
+            <!-- PROJETO 5 -->
+            <article class="project-card">
+                <figure class="project-thumb" style="background-image:url('img/cafers.png')"></figure>
+                <div class="project-info">
+                    <h3 class="project-title">Cafeteria Responsiva</h3>
+                    <p class="project-desc">Site moderno para uma cafeteria, com layout adaptável, menu interativo e foco na experiência do usuário.</p>
+                    <ul class="tech-list">
+                        <li><i class="bi bi-filetype-html"></i> HTML</li>
+                        <li><i class="bi bi-filetype-css"></i> CSS</li>
+                        <li><i class="bi bi-phone"></i> Responsivo</li>
+                    </ul>
+                    <a href="https://cafeteria-one-smoky.vercel.app/index.html" target="_blank" class="btn-projeto">Ver projeto</a>
+                </div>
+            </article>
+
+        </div><!-- /portfolio-grid -->
     </div>
-</section> <!-- Fim da interface -->
+
+    <!-- CSS MODERNO DOS CARDS -->
+    <style>
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .project-card {
+            background: #1a1a1a;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(186, 18, 18, 0.6);
+        }
+
+        .project-thumb {
+            width: 100%;
+            padding-top: 60%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: .5rem;
+        }
+
+        .project-desc {
+            font-size: .95rem;
+            color: #cfcfcf;
+            margin-bottom: 1rem;
+            flex: 1;
+        }
+
+        .tech-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+            margin-bottom: 1rem;
+            padding: 0;
+        }
+
+        .tech-list li {
+            background: #ba1212;
+            color: #fff;
+            padding: .25rem .6rem;
+            border-radius: 12px;
+            font-size: .75rem;
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+        }
+
+        .btn-projeto {
+            align-self: flex-start;
+            background: transparent;
+            border: 2px solid #ba1212;
+            color: #ba1212;
+            padding: .5rem 1rem;
+            border-radius: 25px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        .btn-projeto:hover {
+            background: #ba1212;
+            color: #fff;
+        }
+    </style>
+</section>
+<!-- Fim da interface -->
 
 <section class="formulario" id="formulario">
     <div class="interface">
